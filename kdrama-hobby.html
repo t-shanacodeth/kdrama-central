@@ -11,8 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Cutive&display=swap"
       rel="stylesheet"
     />
-
-    
   </head>
   <body>
     <button class="dark-mode-toggle">Change Appearance</button>
@@ -117,26 +115,5 @@
       </a>
       with HTML, CSS and JavaScript
     </footer>
-
-    <script>
-      // Toggle between light and dark mode
-      let changeAppearanceButton = document.querySelector(".dark-mode-toggle");
-      changeAppearanceButton.addEventListener("click", changeAppearance);
-
-      function changeAppearance() {
-        let body = document.querySelector("body");
-
-        if (body.classList.contains("dark-mode")) {
-          body.classList.remove("dark-mode");
-        } else {
-          body.classList.add("dark-mode");
-        }
-      }
-
-      // Navigate to website to watch kdramas
-      function goToViki() {
-        window.location.href = "https://www.viki.com/";
-      }
-    </script>
   </body>
 </html>
