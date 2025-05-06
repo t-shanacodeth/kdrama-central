@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Drama - My Hobby</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(45deg, #ee9ca7 25%, #ffdde1 75%);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .container {
+        max-width: 55vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: whitesmoke;
+        margin: 30px 0;
+        padding: 45px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.15);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .hero-kdrama-image {
+        width: 88%;
+        margin: 15px 45px;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .hero-kdrama-image:hover {
+        transform: scale(1.05);
+        filter: contrast(0.7);
+      }
+
+      button {
+        margin: 15px auto;
+        padding: 8px 15px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 175ms ease-in-out;
+        border: 1px solid palevioletred;
+        border-radius: 4px;
+        background-color: whitesmoke;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: palevioletred;
+        color: whitesmoke;
+      }
+
+      .dark-mode-toggle {
+        font-size: 0.7rem;
+        background-color: #430e18;
+        border: 1px solid #430e18;
+        color: whitesmoke;
+      }
+
+      .dark-mode-toggle:hover {
+        background-color: whitesmoke;
+        color: #430e18;
+      }
+
+      .image-gallery {
+        margin: 5px 0 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 12px;
+      }
+
+      .image-gallery img {
+        height: 220px;
+        width: 155px;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.1);
+        filter: contrast(0.7);
+      }
+
+      .kdrama-description {
+        margin: 10px 25px 18px 25px;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 2;
+      }
+
+      footer {
+        font-family: Cutive, serif;
+        font-size: 0.7rem;
+        font-weight: 400;
+        word-spacing: 2px;
+        margin-bottom: 35px;
+        color: whitesmoke;
+      }
+
+      footer span {
+        font-size: 20px;
+      }
+
+      footer a {
+        color: rgb(210, 70, 116);
+        text-decoration: underline;
+      }
+
+      /* DARK MODE STYLING */
+
+      .dark-mode {
+        background: linear-gradient(
+          115deg,
+          rgb(0, 0, 0) 5.8%,
+          rgb(178, 14, 14) 112.6%
+        );
+        color: whitesmoke;
+      }
+
+      .dark-mode button {
+        background-color: palevioletred;
+        color: whitesmoke;
+      }
+
+      .dark-mode button:hover {
+        background-color: #d3d3d3;
+        color: palevioletred;
+      }
+
+      .dark-mode .dark-mode-toggle {
+        background-color: #ffdde1;
+        color: black;
+      }
+
+      .dark-mode .dark-mode-toggle:hover {
+        background-color: #ededed;
+      }
+
+      .dark-mode .container {
+        background-color: #2c2c2c;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-mode-toggle">Change Appearance</button>
+
+    <div class="container">
+      <header>
+        <h1>K-Drama Central</h1>
+        <h2>Great Entertainment Straight from South Korea 🇰🇷</h2>
+      </header>
+
+      <a
+        href="https://en.wikipedia.org/wiki/The_Glory_(TV_series)"
+        target="_blank"
+      >
+        <img
+          src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeizdHXVC_vwnnDSO7vimaI_URC1-d70VShgT8-1-ylEFN8IBtKhsj1qw48HbuJ_V-PPgGKVzRzDTD_ffGc-hXDfURLXQ6CmnsTfueqUTy5wNpxfplKGvNVsEfnH4OD2gKsKGA.webp?r=3d2"
+          alt="The Glory poster"
+          class="hero-kdrama-image"
+        />
+      </a>
+
+      <div class="image-gallery">
+        <a
+          href="https://en.wikipedia.org/wiki/Crash_Landing_on_You"
+          target="_blank"
+        >
+          <img
+            src="https://media.senscritique.com/media/000021345072/0/crash_landing_on_you.jpg"
+            alt="Crash Landing on You poster"
+          />
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Extraordinary_Attorney_Woo"
+          target="_blank"
+        >
+          <img
+            src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22283469_b_v10_ac.jpg"
+            alt="Extraordinary Attorney Woo poster"
+          />
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Flower_of_Evil_%28South_Korean_TV_series%29"
+          target="_blank"
+        >
+          <img
+            src="https://fr.web.img6.acsta.net/c_310_420/pictures/23/10/10/10/36/1419899.jpg"
+            alt="Flower of Evil poster"
+          />
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Marry_My_Husband"
+          target="_blank"
+        >
+          <img
+            src="https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F899KcBqooj8nEyPcAEU3h7AdfUo.jpg"
+            alt="Marry My Husband poster"
+          />
+        </a>
+      </div>
+      <div class="kdrama-description">
+        <p>
+          K-Dramas, or Korean dramas, are popular television series from South
+          Korea, known for their engaging storylines, romantic elements, and
+          diverse genres. They have gained international recognition and appeal,
+          particularly for their storytelling and character development.
+        </p>
+        <h3>Storytelling:</h3>
+        <p>
+          K-Dramas often feature compelling narratives that blend romance,
+          drama, and action, making them captivating for viewers.
+        </p>
+        <h3>Character Development:</h3>
+        <p>
+          Many K-Dramas focus on the growth and transformation of their
+          characters, allowing viewers to connect with them emotionally.
+        </p>
+        <h3>Diversity:</h3>
+        <p>
+          K-Dramas encompass a wide range of genres, from romantic comedies to
+          historical dramas and thrillers, catering to various tastes.
+        </p>
+        <h3>International Appeal:</h3>
+        <p>
+          The popularity of KDramas has extended globally, with many series
+          reaching international audiences through streaming platforms and
+          online channels.
+        </p>
+      </div>
+
+      <button class="recommendations" onclick="goToViki()">
+        Find your next K-drama
+      </button>
+    </div>
+
+    <footer>
+      Coded with <span>🫶🏾</span> by
+      <a
+        href="https://www.linkedin.com/in/tishana-b-a3835a26b/"
+        target="_blank"
+      >
+        Tishana
+      </a>
+      with HTML, CSS and JavaScript
+    </footer>
+
+    <script>
+      // Toggle between light and dark mode
+      let changeAppearanceButton = document.querySelector(".dark-mode-toggle");
+      changeAppearanceButton.addEventListener("click", changeAppearance);
+
+      function changeAppearance() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark-mode")) {
+          body.classList.remove("dark-mode");
+        } else {
+          body.classList.add("dark-mode");
+        }
+      }
+
+      // Navigate to website to watch kdramas
+      function goToViki() {
+        window.location.href = "https://www.viki.com/";
+      }
+    </script>
+  </body>
+</html>
